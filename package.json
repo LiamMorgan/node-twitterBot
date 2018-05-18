@@ -1,0 +1,16 @@
+{
+  "name": "twitterbot",
+  "version": "1.0.0",
+  "description": "A simple twitter bot",
+  "main": "bot.js",
+  "dependencies": {
+    "check-node-version": "^3.2.0",
+    "twit": "^2.2.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Liam Morgan",
+  "license": "ISC"
+}
