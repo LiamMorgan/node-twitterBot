@@ -4,9 +4,7 @@ var config = require("./config.js");
 var fs = require('fs');
 var scraperjs = require('scraperjs');
 var Twitter = new twit(config);
-
-var msg;
-var myId = "330834651";
+//Above are npm packages or configuration files
 var botId = "995802496768634885";
 
 function postQuote() {
