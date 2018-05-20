@@ -4,7 +4,7 @@ var config = require("./config.js");
 var fs = require('fs');
 var scraperjs = require('scraperjs');
 var Twitter = new twit(config);
-//Above are npm packages or configuration files
+
 var botId = "995802496768634885";
 
 function postQuote() {
@@ -33,6 +33,7 @@ function postQuote() {
 			if (err) throw err;
 		});
 	})
+	console.log("Last quote: " + new Date())
 	setTimeout(postQuote,3600000*24);
 }
 
@@ -70,6 +71,7 @@ function favoriteBot() {
 			}
 		}
 	});
+	console.log("Last favorite: " + new Date())
 	setTimeout(favoriteBot,3600000/3);
 }
 
